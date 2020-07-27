@@ -35,8 +35,12 @@ body {
 }
 
 .section--hero {
-  background-image: 
+  background-image: url('img/steet-duo-bw.jpg');
+  background-size: cover;
+  background-position: center;
   height: 96vh;
+  overflow: hidden;
+  width: auto;
 }
 
 /* * Reusuable Classes * */
@@ -46,6 +50,12 @@ body {
   border: 2px solid transparent;
   border-radius: 5px;
   padding: 8px 16px;
+}
+
+/* Change SVG color */
+/* Found at this CodePen: https://codepen.io/sosuke/pen/Pjoqqp */
+.filter-primary {
+  filter: invert(11%) sepia(98%) saturate(7005%) hue-rotate(3deg) brightness(89%) contrast(113%);
 }
 
 .screen-reader-text {
