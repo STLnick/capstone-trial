@@ -47,6 +47,23 @@ body {
   width: auto;
 }
 
+.hero-text {
+  color: white;
+  font-size: 16px;
+  line-height: 1.5rem;
+  text-shadow: 0 0 5px var(--primary-color), 0 0 10px #000, 0 0 16px #616161;
+}
+
+.hero-text-last {
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  font-size: 16px;
+  margin: 1rem 0 10rem 0;
+}
+
 /* * Reusuable Classes * */
 
 .cta-btn {
