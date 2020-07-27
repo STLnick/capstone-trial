@@ -18,6 +18,7 @@ body {
 
 .top-nav {
   background-color: #eee;
+  height: 7vh;
   padding: 0.5rem 1rem;
 }
 
@@ -39,7 +40,7 @@ body {
   background-image: url('img/steet-duo-bw.jpg');
   background-size: cover;
   background-position: center;
-  height: 96vh;
+  height: 93vh;
   overflow: hidden;
   width: auto;
 }
