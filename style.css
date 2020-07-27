@@ -1,0 +1,87 @@
+:root {
+  --primary-color: #ec0000;
+  --basic-text: #616161;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--basic-text);
+  font-size: 10px;
+}
+
+/* * Classes & IDs * */
+
+.top-nav {
+  background-color: #eee;
+  padding: 0.5rem 1rem;
+}
+
+.logo-container {
+  width: 5rem;
+}
+
+.logo {
+  height: auto;
+  width: 100%;
+}
+
+.menu-btn {
+  height: auto;
+  width: 2.25rem;
+}
+
+.section--hero {
+  background-image: 
+  height: 96vh;
+}
+
+/* * Reusuable Classes * */
+
+.cta-btn {
+  background-color: var(--primary-color);
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 8px 16px;
+}
+
+.screen-reader-text {
+  left: -99999px;
+  position: absolute;
+  top: -99999px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.flex--justify-around {
+  justify-content: space-around;
+}
+
+.flex--justify-between {
+  justify-content: space-between;
+}
+
+.flex--justify-center {
+  justify-content: center;
+}
+
+.flex--justify-evenly {
+  justify-content: space-evenly;
+}
+
+.flex--align-center {
+  align-items: center;
+}
+
+.flex--wrap {
+  flex-wrap: wrap;
+}
