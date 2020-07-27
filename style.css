@@ -1,5 +1,7 @@
 :root {
   --primary-color: #ec0000;
+  --primary-light: #fd3e3e;
+  --primary-dark: #a30202;
   --basic-text: #616161;
 }
 
@@ -10,6 +12,7 @@
 
 body {
   color: var(--basic-text);
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 10px;
 }
 
@@ -17,6 +20,7 @@ body {
 
 .top-nav {
   background-color: #eee;
+  height: 7vh;
   padding: 0.5rem 1rem;
 }
 
@@ -35,8 +39,29 @@ body {
 }
 
 .section--hero {
-  background-image: 
-  height: 96vh;
+  background-image: url('img/steet-duo-bw.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 93vh;
+  overflow: hidden;
+  width: auto;
+}
+
+.hero-text {
+  color: white;
+  font-size: 16px;
+  line-height: 1.5rem;
+  text-shadow: 0 0 5px var(--primary-color), 0 0 10px #000, 0 0 16px #616161;
+}
+
+.hero-text-last {
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  font-size: 16px;
+  margin: 1rem 0 10rem 0;
 }
 
 /* * Reusuable Classes * */
@@ -45,7 +70,25 @@ body {
   background-color: var(--primary-color);
   border: 2px solid transparent;
   border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  outline: none;
   padding: 8px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color, box-shadow 0.4s;
+}
+
+.cta-btn:focus,
+.cta-btn:hover {
+  background-color: var(--primary-dark);
+  box-shadow: 0 0 3px 3px var(--primary-light);
+}
+
+/* Change SVG color */
+/* Found at this CodePen: https://codepen.io/sosuke/pen/Pjoqqp */
+.filter-primary {
+  filter: invert(11%) sepia(98%) saturate(7005%) hue-rotate(3deg) brightness(89%) contrast(113%);
 }
 
 .screen-reader-text {
@@ -74,12 +117,20 @@ body {
   justify-content: center;
 }
 
+.flex--justify-end {
+  justify-content: flex-end;
+}
+
 .flex--justify-evenly {
   justify-content: space-evenly;
 }
 
 .flex--align-center {
   align-items: center;
+}
+
+.flex--align-end {
+  align-items: flex-end;
 }
 
 .flex--wrap {
