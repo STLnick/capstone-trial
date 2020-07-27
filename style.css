@@ -123,6 +123,25 @@ body {
   margin: 1rem 0 10rem 0;
 }
 
+.section--goal {
+  padding: 3rem 2rem;
+}
+
+.goal-heading {
+  font-size: 3.6em;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--primary-light);
+}
+
+.goal-text {
+  font-size: 2em;
+  line-height: 2rem;
+}
+
+.partition-img { 
+  width: 100%;
+}
+
 /* * Reusuable Classes * */
 
 .cta-btn {
