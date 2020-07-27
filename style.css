@@ -55,9 +55,17 @@ body {
   border-radius: 5px;
   color: white;
   font-weight: 700;
+  outline: none;
   padding: 8px 16px;
   text-decoration: none;
   text-transform: uppercase;
+  transition: background-color, box-shadow 0.4s;
+}
+
+.cta-btn:focus,
+.cta-btn:hover {
+  background-color: var(--primary-dark);
+  box-shadow: 0 0 3px 3px var(--primary-light);
 }
 
 /* Change SVG color */
