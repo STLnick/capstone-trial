@@ -53,6 +53,11 @@ blockquote footer::after {
   content: '\2014';
 }
 
+footer {
+  background-color: #616161;
+  height: 10rem;
+}
+
 /* * Classes & IDs * */
 
 .overlay {
@@ -151,7 +156,6 @@ blockquote footer::after {
 }
 
 .hero-btn {
-  font-size: 16px;
   margin: 1rem 0 10rem 0;
 }
 
@@ -194,6 +198,9 @@ blockquote footer::after {
   width: 100%;
 }
 
+.bottom-cta-btn {
+  margin: 2rem 0 0;
+}
 
 /* * Reusuable Classes * */
 
@@ -221,6 +228,7 @@ blockquote footer::after {
   border: 2px solid transparent;
   border-radius: 5px;
   color: white;
+  font-size: 16px;
   font-weight: 700;
   outline: none;
   padding: 8px 16px;
