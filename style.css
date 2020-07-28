@@ -21,6 +21,38 @@ body {
   font-size: 10px;
 }
 
+blockquote {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+blockquote p {
+  background-color: var(--primary-light);
+  border-radius: 5px;
+  color: #eee;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+}
+
+blockquote p::before {
+  content: '\201C';
+}
+
+blockquote p::after {
+  content: '\201D';
+}
+
+blockquote footer {
+  color: var(--primary-light);
+  font-weight: 700;
+}
+
+blockquote footer::before,
+blockquote footer::after {
+  content: '\2014';
+}
+
 /* * Classes & IDs * */
 
 .overlay {
@@ -143,6 +175,25 @@ body {
 .use-list {
   text-align: center;
 }
+
+.testimonial {
+  width: 100%;
+}
+
+.testimonial-1,
+.testimonial-2 {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 4px solid #eee;
+}
+
+.testimonial-1-img,
+.testimonial-2-img,
+.testimonial-3-img {
+  border-radius: 10px;
+  width: 100%;
+}
+
 
 /* * Reusuable Classes * */
 
