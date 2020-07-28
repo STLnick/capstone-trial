@@ -123,7 +123,26 @@ body {
   margin: 1rem 0 10rem 0;
 }
 
-.section--goal {
+.partition-img { 
+  width: 100%;
+}
+
+.feature-list {
+  list-style-type: none;
+}
+
+.feature-list-item {
+  margin-bottom: 0.25rem;
+}
+
+.feature-list-item--marker {
+  margin-right: 0.25rem;
+  width: 2rem;
+}
+
+/* * Reusuable Classes * */
+
+.section {
   padding: 3rem 2rem;
 }
 
@@ -138,11 +157,6 @@ body {
   line-height: 2rem;
 }
 
-.partition-img { 
-  width: 100%;
-}
-
-/* * Reusuable Classes * */
 .cta-btn {
   background-color: var(--primary-color);
   border: 2px solid transparent;
