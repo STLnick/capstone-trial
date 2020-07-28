@@ -127,12 +127,8 @@ body {
   width: 100%;
 }
 
-.feature-list {
-  list-style-type: none;
-}
-
 .feature-list-item {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .feature-list-item--marker {
@@ -140,10 +136,22 @@ body {
   width: 2rem;
 }
 
+.section-use {
+  background-color: #eee;
+}
+
+.use-list {
+  text-align: center;
+}
+
 /* * Reusuable Classes * */
 
+.list {
+  list-style-type: none;
+}
+
 .section {
-  padding: 3rem 2rem;
+  padding: 4rem 2rem;
 }
 
 .section-heading {
