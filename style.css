@@ -55,7 +55,7 @@ blockquote footer::after {
 
 footer {
   background-color: #616161;
-  height: 10rem;
+  padding: 1rem;
 }
 
 /* * Classes & IDs * */
@@ -200,6 +200,14 @@ footer {
 
 .bottom-cta-btn {
   margin: 2rem 0 0;
+}
+
+.social-links {
+  width: 10rem;
+}
+
+.social-icon {
+  width: 2rem;
 }
 
 /* * Reusuable Classes * */
