@@ -245,6 +245,11 @@ blockquote footer::after {
   text-decoration-color: var(--primary-dark);
 }
 
+.inputs-container {
+  height: 60%;
+  width: 100%;
+}
+
 /* * Reusuable Classes * */
 
 .list {
