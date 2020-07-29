@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Font: Roboto Condensed -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <title>Jam Cafe - Login</title>
+</head>
+
+<body>
+  <h1 class="screen-reader-text">Jam Cafe - Login</h1>
+  <div class="overlay"></div>
+  <header class="top-nav flex flex--justify-between">
+    <div class="logo-container">
+      <img class="logo" src="img/logo.svg" alt="Jam Cafe logo">
+    </div>
+    <div class="top-nav-right flex flex--justify-around">
+      <!-- TODO: Hide menu on click outside of menu -->
+      <!-- TODO: Link menu options properly -->
+      <img src="img/icons/menu.svg" alt="Menu button" class="menu-btn filter-primary">
+    </div>
+    <div class="mobile-menu">
+      <ul class="mobile-menu--list">
+        <!-- TODO: Add correct links to text -->
+        <a href="#">
+          <li>Sign up</li>
+        </a>
+        <a href="#">
+          <li>Login</li>
+        </a>
+        <a href="#">
+          <li>About Us</li>
+        </a>
+      </ul>
+    </div>
+  </header>
+  <main class="register-container flex flex--column flex--align-center flex--justify-center">
+    <h3 class="section-heading">Join the Jam</h3>
+    <form class="register-form  flex flex--column flex--align-center flex--justify-around">
+      <label for="email" class="screen-reader-text">Email</label>
+      <input type="email" class="input" id="email" placeholder="Email">
+      <label for="password" class="screen-reader-text">Password</label>
+      <input type="password" class="input" id="password" placeholder="Password">
+      <button class="cta-btn" type="submit">Login</button>
+      <div class="register-form-bottom">
+        <p>Not registered yet?</p>
+        <a href="register.html" class="login-link">
+          <p>Register</p>
+        </a>
+      </div>
+    </form>
+  </main>
+</body>
