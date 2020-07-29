@@ -53,11 +53,6 @@ blockquote footer::after {
   content: '\2014';
 }
 
-.footer {
-  background-color: #616161;
-  padding: 1rem;
-}
-
 /* * Classes & IDs * */
 
 .overlay {
@@ -200,6 +195,11 @@ blockquote footer::after {
 
 .bottom-cta-btn {
   margin: 2rem 0 0;
+}
+
+.footer {
+  background-color: #616161;
+  padding: 1rem;
 }
 
 .social-links {
