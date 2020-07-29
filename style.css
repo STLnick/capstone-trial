@@ -254,6 +254,14 @@ blockquote footer::after {
   width: 100%;
 }
 
+.about-img-container {
+  padding: 1rem 0;
+}
+
+.about-img {
+  width: 100%;
+}
+
 /* * Reusuable Classes * */
 
 .list {
