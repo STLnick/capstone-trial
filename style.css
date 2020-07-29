@@ -193,6 +193,10 @@ blockquote footer::after {
   width: 100%;
 }
 
+.help-section {
+  background-color: #eee;
+}
+
 .bottom-cta-btn {
   margin: 2rem 0 0;
 }
