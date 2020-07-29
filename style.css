@@ -210,6 +210,41 @@ blockquote footer::after {
   width: 2rem;
 }
 
+.register-container {
+  height: 91vh;
+  width: 100vw;
+}
+
+.register-form {
+  background-color: #eee;
+  border: none;
+  border-radius: 5px;
+  height: 80%;
+  width: 80%;
+}
+
+.register-form-bottom {
+  text-align: center;
+}
+
+.register-form-bottom p {
+  font-size: 1.5em;
+}
+
+.login-link {
+  color: var(--primary-light);
+  outline: none;
+  transition: color, font-weight, text-decoration 0.4s;
+}
+
+.login-link:focus,
+.login-link:hover {
+  color: var(--primary-dark);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--primary-dark);
+}
+
 /* * Reusuable Classes * */
 
 .list {
@@ -251,6 +286,20 @@ blockquote footer::after {
   box-shadow: 0 0 3px 3px var(--primary-light);
 }
 
+.input {
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  outline: none;
+  padding: 1rem;
+  transition: box-shadow 0.4s;
+  width: 80%;
+}
+
+.input:focus,
+.input:hover {
+  box-shadow: 0 0 3px 3px var(--primary-dark);
+}
+
 /* Change SVG color */
 /* Found at this CodePen: https://codepen.io/sosuke/pen/Pjoqqp */
 .filter-primary {
@@ -262,6 +311,8 @@ blockquote footer::after {
   position: absolute;
   top: -99999px;
 }
+
+/* Flex Classes */
 
 .flex {
   display: flex;
