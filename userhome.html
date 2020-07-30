@@ -23,6 +23,8 @@
     <div class="search-bar flex">
       <form action="" class="search-form flex flex--align-center flex--justify-between">
         <input type="text" class="search-input" placeholder="Search...">
+        <!-- TODO: Configure Submit to only display Posts matcing Search Text -->
+        <!-- TODO: Could maybe just have it dynamically filter and not have to press btn -->
         <button type="submit" class="search-button">
           <img src="img/icons/search-circle-sharp.svg" class="search-icon filter-primary" alt="Search icon">
         </button>
@@ -37,11 +39,11 @@
         <a href="userhome.html">
           <li>Home</li>
         </a>
-        <!-- TODO: Link to make a post page -->
+        <!-- TODO: Link to 'make a post' page -->
         <a href="#">
           <li>Post</li>
         </a>
-        <!-- TODO: Link to view user profile page -->
+        <!-- TODO: Link to 'view user profile' page -->
         <a href="#">
           <li>Profile</li>
         </a>
@@ -49,6 +51,80 @@
     </div>
   </header>
   <!-- POSTS HERE -->
+  <div class="posts flex flex--column flex--align-center flex--justify-evenly">
+    <h3 class="section-heading">User Posts</h3>
+    <!-- TODO: Create an object in JS to dynamically render the amount of Posts we have -->
+    <div class="post flex flex--column flex--align-center">
+      <h4 class="post--title">Title</h4>
+      <a class="post--username" href="#">
+        <p class="">User Name</p>
+      </a>
+      <div class="post--content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat enim ipsa expedita, dolore minima corporis
+          nostrum nulla tenetur facilis explicabo vitae quidem! Ducimus obcaecati repellat nobis culpa assumenda dolores
+          omnis.</p>
+      </div>
+      <div class="post-footer flex flex--align-center flex--justify-between">
+        <p class="post--date">30 July 2020</p>
+        <img tabindex="0" class="post--message-icon filter-primary" src="img/icons/chatbox-ellipses.svg" alt="">
+      </div>
+    </div>
+
+    <div class="post flex flex--column flex--align-center">
+      <h4 class="post--title">Title</h4>
+      <!-- TODO: Link the User Name to the actual User's Profile -->
+      <a class="post--username" href="#">
+        <p class="">User Name</p>
+      </a>
+      <div class="post--content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat enim ipsa expedita, dolore minima corporis
+          nostrum nulla tenetur facilis explicabo vitae quidem! Ducimus obcaecati repellat nobis culpa assumenda dolores
+          omnis.</p>
+      </div>
+      <div class="post-footer flex flex--align-center flex--justify-between">
+        <p class="post--date">30 July 2020</p>
+        <img tabindex="0" class="post--message-icon filter-primary" src="img/icons/chatbox-ellipses.svg" alt="">
+      </div>
+    </div>
+
+    <div class="post flex flex--column flex--align-center">
+      <h4 class="post--title">Title</h4>
+      <a class="post--username" href="#">
+        <p class="">User Name</p>
+      </a>
+      <div class="post--content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat enim ipsa expedita, dolore minima corporis
+          nostrum nulla tenetur facilis explicabo vitae quidem! Ducimus obcaecati repellat nobis culpa assumenda dolores
+          omnis.</p>
+      </div>
+      <div class="post-footer flex flex--align-center flex--justify-between">
+        <p class="post--date">30 July 2020</p>
+        <img tabindex="0" class="post--message-icon filter-primary" src="img/icons/chatbox-ellipses.svg" alt="">
+      </div>
+    </div>
+
+    <div class="post flex flex--column flex--align-center">
+      <h4 class="post--title">Title</h4>
+      <a class="post--username" href="#">
+        <p class="">User Name</p>
+      </a>
+      <div class="post--content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat enim ipsa expedita, dolore minima corporis
+          nostrum nulla tenetur facilis explicabo vitae quidem! Ducimus obcaecati repellat nobis culpa assumenda dolores
+          omnis.</p>
+      </div>
+      <div class="post-footer flex flex--align-center flex--justify-between">
+        <p class="post--date">30 July 2020</p>
+        <img tabindex="0" class="post--message-icon filter-primary" src="img/icons/chatbox-ellipses.svg" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- Fixed 'Write a Post' icon -->
+  <!-- TODO: Link to 'Write a Post Page' -- same as link in the menu for 'Post' -->
+  <a href="#" class="write-post-link">
+    <img tabindex="0" src="img/icons/add-circle-sharp.svg" class="write-post-icon filter-primary"
+      alt="Plus icon to write a post">
+  </a>
   <footer class="footer flex flex--align-center flex--justify-between">
     <div class="logo-container">
       <img class="logo" src="img/logo.svg" alt="Jam Cafe logo">
