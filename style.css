@@ -249,7 +249,8 @@ textarea {
   text-align: center;
 }
 
-.profile-title {
+.profile-title,
+.post--title {
   color: var(--primary-dark);
   font-size: 2.8em;
 }
@@ -328,6 +329,83 @@ textarea {
 .search-icon {
   transition: box-shadow 0.4s;
   width: 2rem;
+}
+
+.posts {
+  padding: 2rem 0 3rem;
+}
+
+.post {
+  background-color: #eee;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 3px 5px #aaa;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  width: 80%;
+}
+
+.post--title {
+  margin: 0.25rem 0 0 0;
+}
+
+.post--username {
+  color: var(--basic-text);
+  font-size: 1.6em;
+  font-weight: 700;
+  outline: none;
+  margin: 0 0 0.5rem 0;
+  transition: text-decoration, color 0.4s;
+}
+
+.post--username:focus,
+.post--username:hover {
+  color: var(--primary-light);
+  text-decoration: underline double var(--primary-light);
+}
+
+.post--content {
+  color: var(--basic-text);
+  font-size: 1.6em;
+  margin: 0.5rem 0;
+}
+
+.post-footer {
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.post--date {
+  color: var(--primary-light);
+  font-size: 1em;
+  margin: 0 0 0 1rem;
+}
+
+.post--message-icon {
+  margin: 0 1rem 0 0;
+  outline: none;
+  transition: box-shadow 0.4s;
+  width: 2rem;
+}
+
+.post--message-icon:focus,
+.post--message-icon:hover {
+  box-shadow: 0 0 2px 2px var(--primary-light);
+}
+
+.write-post-icon {
+  border-radius: 50%;
+  bottom: 2rem;
+  outline: none;
+  right: 2rem;
+  position: fixed;
+  transition: box-shadow 0.4s;
+  width: 5rem;
+}
+
+.write-post-icon:focus,
+.write-post-icon:hover {
+  box-shadow: 0 0 3px 3px var(--primary-color);
 }
 
 /* --------------------- */
