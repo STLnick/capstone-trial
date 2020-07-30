@@ -93,8 +93,14 @@ textarea {
 
 .menu-btn {
   height: auto;
+  outline: none;
   width: 2.25rem;
   z-index: 2;
+}
+
+.menu-btn:focus,
+.menu-btn:hover {
+  box-shadow: 0 0 2px 2px var(--primary-light);
 }
 
 .mobile-menu {
