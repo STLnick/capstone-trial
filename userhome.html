@@ -8,17 +8,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
-  <title>Jam Cafe</title>
+  <title>Jam Cafe - User Home</title>
 </head>
 
 <body>
-  <h1 class="screen-reader-text">Jam Cafe</h1>
+  <h1 class="screen-reader-text">Jam Cafe - User Home</h1>
   <div class="overlay"></div>
   <header class="top-nav flex flex--justify-between">
-    <div class="logo-container">
+    <div class="logo-container flex flex--align-center">
       <a href="index.html">
         <img class="logo" src="img/logo.svg" alt="Jam Cafe logo">
       </a>
+    </div>
+    <div class="search-bar flex">
+      <form action="" class="search-form flex flex--align-center flex--justify-between">
+        <input type="text" class="search-input" placeholder="Search...">
+        <button type="submit" class="search-button">
+          <img src="img/icons/search-circle-sharp.svg" class="search-icon filter-primary" alt="Search icon">
+        </button>
+      </form>
     </div>
     <div class="top-nav-right flex flex--justify-around">
       <!-- TODO: Hide menu on click outside of menu -->
@@ -26,14 +34,16 @@
     </div>
     <div class="mobile-menu">
       <ul class="mobile-menu--list">
-        <a href="register.html">
-          <li>Sign up</li>
+        <a href="userhome.html">
+          <li>Home</li>
         </a>
-        <a href="login.html">
-          <li>Login</li>
+        <!-- TODO: Link to make a post page -->
+        <a href="#">
+          <li>Post</li>
         </a>
-        <a href="about.html">
-          <li>About Us</li>
+        <!-- TODO: Link to view user profile page -->
+        <a href="#">
+          <li>Profile</li>
         </a>
       </ul>
     </div>
