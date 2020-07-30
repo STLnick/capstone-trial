@@ -53,6 +53,10 @@ blockquote footer::after {
   content: '\2014';
 }
 
+textarea {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 /* * Classes & IDs * */
 
 .overlay {
@@ -214,12 +218,14 @@ blockquote footer::after {
   width: 2rem;
 }
 
-.register-container {
+.register-container,
+.edit-profile-container {
   height: 91vh;
   width: 100vw;
 }
 
-.register-form {
+.register-form,
+.edit-profile-form {
   background-color: #eee;
   border: none;
   border-radius: 5px;
@@ -283,24 +289,40 @@ blockquote footer::after {
   line-height: 2rem;
 }
 
-.cta-btn {
-  background-color: var(--primary-color);
+.cta-btn,
+.cancel-btn {
   border: 2px solid transparent;
   border-radius: 5px;
-  color: white;
   font-size: 16px;
   font-weight: 700;
   outline: none;
   padding: 8px 16px;
   text-decoration: none;
   text-transform: uppercase;
-  transition: background-color, box-shadow 0.4s;
+  transition: background-color, box-shadow, color 0.4s;
+}
+
+.cta-btn {
+  background-color: var(--primary-color);
+  color: white;
 }
 
 .cta-btn:focus,
 .cta-btn:hover {
   background-color: var(--primary-dark);
   box-shadow: 0 0 3px 3px var(--primary-light);
+}
+
+.cancel-btn {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.cancel-btn:focus,
+.cancel-btn:hover {
+  background-color: var(--primary-dark);
+  box-shadow: 0 0 3px 3px var(--primary-light);
+  color: white;
 }
 
 .input {
