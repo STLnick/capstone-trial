@@ -57,7 +57,9 @@ textarea {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+/* ----------------- */
 /* * Classes & IDs * */
+/* ----------------- */
 
 .overlay {
   background-color: rgba(255, 255, 255,0.6);
@@ -81,7 +83,7 @@ textarea {
 }
 
 .logo-container {
-  width: 5rem;
+  width: 4rem;
 }
 
 .logo {
@@ -292,7 +294,39 @@ textarea {
   width: 100%;
 }
 
-/* * Reusuable Classes * */
+.search-input {
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  outline: none;
+  padding: 0.75rem;
+  transition: box-shadow 0.4s;
+  width: 70%;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  border-radius: 50%;
+  height: 2rem;
+  outline: none;
+  padding: 0;
+  transition: box-shadow 0.4s;
+  width: 2rem;
+}
+
+.search-button:focus,
+.search-button:hover {
+  box-shadow: 0 0 2px 2px var(--primary-dark);
+}
+
+.search-icon {
+  transition: box-shadow 0.4s;
+  width: 2rem;
+}
+
+/* --------------------- */
+/* * Reuseable Classes * */
+/* --------------------- */
 
 .list {
   list-style-type: none;
@@ -359,7 +393,9 @@ textarea {
 }
 
 .input:focus,
-.input:hover {
+.input:hover,
+.search-input:focus,
+.search-input:hover {
   box-shadow: 0 0 3px 3px var(--primary-dark);
 }
 
