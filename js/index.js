@@ -1,4 +1,5 @@
 const overlay = document.querySelector('.overlay')
+const menuBtn = document.querySelector('.menu-btn')
 const mobileMenu = document.querySelector('.mobile-menu')
 
 const toggleMobileMenu = () => {
@@ -6,6 +7,11 @@ const toggleMobileMenu = () => {
   overlay.classList.toggle('enabled')
 }
 
-document.querySelector('.menu-btn').addEventListener('click', () => {
-  toggleMobileMenu()
+menuBtn.addEventListener('click', toggleMobileMenu)
+// Toggle menu when 'Enter' is pressed
+menuBtn.addEventListener('keydown', (e) => {
+  if (e.keyCode === 13) {
+    event.preventDefault();
+    toggleMobileMenu()
+  }
 })
