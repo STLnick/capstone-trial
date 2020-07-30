@@ -38,6 +38,32 @@
       </ul>
     </div>
   </header>
+
+  <main class="edit-profile-container flex flex--column flex--align-center flex--justify-center">
+    <h3 class="section-heading">Edit Profile</h3>
+    <form class="edit-profile-form flex flex--column flex--align-center flex--justify-around">
+      <label for="name" class="screen-reader-text">Name</label>
+      <input id="name" type="text" class="input" placeholder="Name">
+      <label for="bio" class="screen-reader-text">About Me</label>
+      <textarea id="bio" class="input" placeholder="About Me"></textarea>
+      <label for="location" class="screen-reader-text">Location</label>
+      <input id="location" type="text" class="input" placeholder="Location (St Louis, MO)">
+      <label for="genres" class="screen-reader-text">Genres</label>
+      <input id="genres" type="text" class="input" placeholder="Genres you play (Rock, Blues, Metal)">
+      <label for="instruments" class="screen-reader-text">Instruments</label>
+      <input id="instruments" type="text" class="input" placeholder="Instruments (Guitar, Bass, Drums)">
+      <!-- TODO: Maybe this cancel-btn goes back to view profile page?? -->
+      <button class="cancel-btn">Cancel</button>
+      <button class="cta-btn" type="submit">Confirm</button>
+    </form>
+    <!-- - Name
+- About Me
+- Location
+- Genres they play
+- Instruments they play
+- Notifications? -->
+  </main>
+
   <footer class="footer flex flex--align-center flex--justify-between">
     <div class="logo-container">
       <img class="logo" src="img/logo.svg" alt="Jam Cafe logo">
