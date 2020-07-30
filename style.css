@@ -219,17 +219,41 @@ textarea {
 }
 
 .register-container,
-.edit-profile-container {
+.edit-profile-container,
+.view-profile-container {
   height: 91vh;
   width: 100vw;
 }
 
 .register-form,
-.edit-profile-form {
+.edit-profile-form,
+.profile-container {
   background-color: #eee;
   border: none;
   border-radius: 5px;
   height: 80%;
+  width: 80%;
+}
+
+.profile-container p {
+  background-color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.profile-title {
+  color: var(--primary-dark);
+  font-size: 2.8em;
+}
+
+.profile-field-heading {
+  font-size: 1.6em;
+}
+
+.profile-field {
+  border: 1px solid var(--primary-dark);
+  border-radius: 5px;
+  padding: 1rem;
   width: 80%;
 }
 
