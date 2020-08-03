@@ -20,16 +20,6 @@
         <img class="logo" src="img/logo.svg" alt="Jam Cafe logo">
       </a>
     </div>
-    <div class="search-bar flex">
-      <form action="" class="search-form flex flex--align-center flex--justify-between">
-        <input type="text" class="search-input" placeholder="Search...">
-        <!-- TODO: Configure Submit to only display Posts matcing Search Text -->
-        <!-- TODO: Could maybe just have it dynamically filter and not have to press btn -->
-        <button type="submit" class="search-button">
-          <img src="img/icons/search-circle-sharp.svg" class="search-icon filter-primary" alt="Search icon">
-        </button>
-      </form>
-    </div>
     <div class="top-nav-right flex flex--justify-around">
       <!-- TODO: Hide menu on click outside of menu -->
       <img tabindex="0" src="img/icons/menu.svg" alt="Menu button" class="menu-btn filter-primary">
@@ -51,6 +41,31 @@
     </div>
   </header>
   <!-- TODO: Message Content here -->
+
+  <main class="write-post-container flex flex--column flex--align-center">
+    <h3 id="message-heading" class="section-heading">Send A Message</h3>
+    <div class="post flex flex--column flex--align-center">
+      <label for="title-input" class="write-heading">Message Title</label>
+      <input type="text" id="title-input" class="input title-input" placeholder="Title here...">
+      <a class="post--username" id="message-recipient" href="#">
+        <!-- TODO: Place the User's name who were sending the post to -->
+        <p class="">Sending to: (User Name)</p>
+      </a>
+      <div class="post--content flex flex--column flex--align-center flex--justify-center">
+        <label for="message-input">Type Message Below</label>
+        <textarea id="message-input" class="input" cols="30" rows="10" placeholder="Message content here..."></textarea>
+      </div>
+      <div class="post-footer flex flex--align-center flex--justify-between">
+        <!-- TODO: Dynamically get Date and place here -->
+        <p class="post--date">30 July 2020</p>
+        <a href="#" class="write-post-link">
+          <img tabindex="0" src="img/icons/checkmark-circle.svg" class="send-message-icon filter-primary"
+            alt="Checkmark icon to send a message">
+        </a>
+      </div>
+    </div>
+  </main>
+
   <footer class="footer flex flex--align-center flex--justify-between">
     <div class="logo-container">
       <img class="logo" src="img/logo.svg" alt="Jam Cafe logo">
