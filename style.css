@@ -409,13 +409,53 @@ textarea {
   box-shadow: 0 0 3px 3px var(--primary-color);
 }
 
+.write-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.input.title-input {
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  outline: none;
+  padding: 1rem;
+  width: 60%;
+}
+
 .write-post-container {
   min-height: 100vh;
   padding: 1rem 0;
 }
 
-#write-post-heading {
+#write-post-heading,
+#message-heading {
   margin: 2rem 0;
+}
+
+#message-recipient {
+  margin-top: 0.5rem;
+}
+
+#message-input {
+  max-height: 250px;
+  max-width: 300px;
+  min-height: 100px;
+  min-width: 150px;
+  width: 85%;
+}
+
+.message-date {
+  color: var(--primary-light);
+  font-size: 1em;
+  margin: 0.5rem 0;
+}
+
+.send-message-icon {
+  margin: 0 1rem 0 0;
+  outline: none;
+  transition: box-shadow 0.4s;
+  width: 3rem;
 }
 
 /* --------------------- */
