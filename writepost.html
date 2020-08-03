@@ -8,11 +8,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
-  <title>Jam Cafe - User Home</title>
+  <title>Jam Cafe - Write Post </title>
 </head>
 
 <body>
-  <h1 class="screen-reader-text">Jam Cafe - User Home</h1>
+  <h1 class="screen-reader-text">Jam Cafe - Write Post</h1>
   <div class="overlay"></div>
   <header class="top-nav flex flex--justify-between">
     <div class="logo-container flex flex--align-center">
@@ -51,6 +51,29 @@
     </div>
   </header>
   <!-- TODO: Write Post content here -->
+
+  <main class="write-post-container flex flex--column flex--align-center">
+    <h3 id="write-post-heading" class="section-heading">Write A Post</h3>
+    <div class="post flex flex--column flex--align-center">
+      <h4 class="post--title">
+        <label for="title-input" class="screen-reader-text">Title</label>
+        <input type="text" id="title-input" placeholder="Title here...">
+      </h4>
+      <a class="post--username" href="#">
+        <!-- TODO: Place the User's name writing the Post here -->
+        <p class="">User Name</p>
+      </a>
+      <div class="post--content">
+        <textarea name="post-content-input" id="" cols="30" rows="10" placeholder="Post content here..."></textarea>
+      </div>
+      <div class="post-footer flex flex--align-center flex--justify-between">
+        <!-- TODO: Dynamically get Date and place here -->
+        <p class="post--date">30 July 2020</p>
+        <img tabindex="0" class="post--message-icon filter-primary" src="img/icons/chatbox-ellipses.svg" alt="">
+      </div>
+    </div>
+  </main>
+
   <footer class="footer flex flex--align-center flex--justify-between">
     <div class="logo-container">
       <img class="logo" src="img/logo.svg" alt="Jam Cafe logo">
