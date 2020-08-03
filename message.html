@@ -29,18 +29,15 @@
         <a href="userhome.html">
           <li>Home</li>
         </a>
-        <!-- TODO: Link to 'make a post' page -->
-        <a href="#">
+        <a href="writepost.html">
           <li>Post</li>
         </a>
-        <!-- TODO: Link to 'view user profile' page -->
-        <a href="#">
+        <a href="viewprofile.html">
           <li>Profile</li>
         </a>
       </ul>
     </div>
   </header>
-  <!-- TODO: Message Content here -->
 
   <main class="write-post-container flex flex--column flex--align-center">
     <h3 id="message-heading" class="section-heading">Send A Message</h3>
@@ -56,8 +53,8 @@
         <textarea id="message-input" class="input" cols="30" rows="10" placeholder="Message content here..."></textarea>
       </div>
       <div class="post-footer flex flex--align-center flex--justify-between">
-        <!-- TODO: Dynamically get Date and place here -->
-        <p class="post--date">30 July 2020</p>
+        <p class="post--date"></p>
+        <!-- TODO: Make button actually send a message to specified User -->
         <a href="#" class="write-post-link">
           <img tabindex="0" src="img/icons/checkmark-circle.svg" class="send-message-icon filter-primary"
             alt="Checkmark icon to send a message">
@@ -83,6 +80,7 @@
     </div>
   </footer>
   <script src="js/index.js"></script>
+  <script src="js/getDate.js"></script>
 </body>
 
 </html>
