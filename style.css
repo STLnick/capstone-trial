@@ -409,6 +409,15 @@ textarea {
   box-shadow: 0 0 3px 3px var(--primary-color);
 }
 
+.write-post-container {
+  min-height: 100vh;
+  padding: 1rem 0;
+}
+
+#write-post-heading {
+  margin: 2rem 0;
+}
+
 /* --------------------- */
 /* * Reuseable Classes * */
 /* --------------------- */
